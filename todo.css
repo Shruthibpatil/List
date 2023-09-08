@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #153677,#4e085f);
+    padding: 10px;
+}
+.todo-List{
+    width: 360px;
+    background: white;
+    margin: 100px 20px;
+    margin: 100px 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-List h2{
+    color :royalblue;
+    margin-left: 10px;
+    
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: whitesmoke;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+
+}
+button{
+    border: none;
+    outline: none;
+    padding: 14px 30px;
+    /* padding-block: 10px; */
+    background: orangered;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    font-size: 16px;
+    padding: 12px 12px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 40%;
+    background-image: url("https://cdn-icons-png.flaticon.com/128/10914/10914728.png");
+    background-size:cover ;
+    background-position:center ;
+    top: 12px;
+    left: 8px;
+    font-size: 30px;
+
+}
+ul li.Checked{
+    color :grey;
+    text-decoration: line-through;
+
+}
+ul li.Checked::before{
+    background-image: url("https://th.bing.com/th?id=OIP.ywAmzmSd5clHmaa0lijuBgHaHa&w=200&h=200&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2");
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top :5px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+ul li span:hover{
+    background: grey;
+}
